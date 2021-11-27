@@ -64,36 +64,27 @@ wireframe 1 - Parking4:
 
 ## SPRINT 3 - Configurando el backend
 
-### 1. Redefinición del diagrama de clases planteado en el sprint 2.
+### Redefinición del diagrama de clases
+![diagrama](https://user-images.githubusercontent.com/93130943/143666955-d95f60aa-2d90-42e4-abcc-0c06dc763f93.png)
 
+### Evidencias en la implementación de código
+![WhatsApp Image 2021-11-24 at 10 44 11 PM](https://user-images.githubusercontent.com/93130943/143667113-1b694163-8d63-40b6-9df8-579049c9cd41.jpeg)
 
-### 2. Configuración de la estructura básica del Backend del proyecto, usando los comandos adecuados para cada proceso.
+![WhatsApp Image 2021-11-24 at 10 51 44 PM](https://user-images.githubusercontent.com/93130943/143666973-ac77c2ae-4559-4307-b1b7-b82e60190c64.jpeg)
 
-### 3. Instalación y configuración de las dependencias necesarias para trabajar con MongoDB, Express, JSON, etc.
+![WhatsApp Image 2021-11-24 at 10 53 54 PM](https://user-images.githubusercontent.com/93130943/143667130-e0a2a8af-4b05-4812-9a43-dda21d7d685f.jpeg)
 
-### 4. Implementación de los Modelos y Controladores en Backend del proyecto.
-
-### 5. Creación de las rutas que permiten realizar las principales tareas con la base de datos y se han identificado previamente en los wireframes como Crear, Actualizar, Eliminar y Buscar.
-
-### 6. Pruebas de las rutas usando Postman.
-
-### 7. Evidencias de participación del equipo
+### Evidencias de participación del equipo
 [Screenshot de la Reunión 4 - Sprint 3](https://github.com/Paularoje/Parking4/blob/1f7bd6645627e29f1490073b02927f3f54ecba7a/Evidencias%20de%20reuniones/Reuni%C3%B3n4-Sprint3.jpeg)
 
 [Screenshot de la Reunión 5 - Sprint 3](https://github.com/Paularoje/Parking4/blob/7b88122791b8d8d200a2959c075e1cb34ee8ef28/Evidencias%20de%20reuniones/Reuni%C3%B3n5-Sprint3.jpeg)
 
 ## SPRINT 4 - Desarrollando el Frontend
 
-### 1.Elabore con algún medio una gráfico (corel, papel, etc) los wireframes del aplicativo.
+### Evidencia de la interfaz de usuario
+![WhatsApp Image 2021-11-24 at 10 59 03 PM (1)](https://user-images.githubusercontent.com/93130943/143667165-9788cd48-29e9-4bfa-8a2b-e0f137264f58.jpeg)
 
-### 2.Identifique con su equipo de trabajo los módulos o componentes a implementar en su arquitectura Frontend.
+### Evidencias en la implementación de código
 
-### 3.Configure la estructura básica del Frontend, para dar inicio al proyecto.
-
-### 4.Implemente los Modelos y Controladores planeados en el  Frontend del proyecto.
-
-### 5.Cree las funcionalidades asociadas a los módulos de  Crear, Actualizar, Eliminar y Buscar.
-
-### 6.Realice pruebas unitarias de la herramienta  y de integración con el backend implementado en el Sprint 3.
-
-### 7. Evidencias de participación del equipo
+### Evidencias de participación del equipo
+[Screenshot de la Reunión 6 - Sprint 4](https://github.com/Paularoje/B4PARKING/blob/ec4bfe1fb74221ed4514e13262e0c9fca0378eb6/Evidencias%20de%20reuniones/Reuni%C3%B3n6-Sprint4.jpeg)
