@@ -9,7 +9,7 @@ const parkingSchema = new Schema(
         salida: {type: Date, required: false}
     },
     {
-        timestamps: true,
+        timestamps: false,
         versionKey: false,
     }
 
