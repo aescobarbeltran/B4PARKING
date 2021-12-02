@@ -37,16 +37,31 @@ export class ParkingComponent implements OnInit {
   }
   }
 
-  editParking(parking: Parking) {
-    this.parkingService.selectedParking = parking;
+  editParking() {
+    if (confirm("Confirma terminar servicio")) {
+    }
+    // parking.duracion=(parking.salida-parking.entrada)*1e-3/60;
+    // if (parking.tipo=="carro"){
+    //   parking.tarifa=tarifa_carro;
+    // }else{
+    //   parking.tarifa=tarifa_moto;
+    // }
+    // parking.total=parking.duracion*parking.tarifa;
+    // parking.vigilante=user.name;
   }
 
-  deleteParking(_id: string) {
-    this.parkingService.deleteParking(_id).subscribe(
-      (res) => console.log(res),
-      (err) => console.error(err)
-    );
+  deleteParking() {
+    if (confirm("Confirma eliminar servicio")) {
+    }
   }
+  // deleteParking(_id: string) {
+  //   if (confirm("Confirma eliminar servicio")) {
+  //     this.parkingService.deleteParking(_id).subscribe(
+  //       (res) => console.log(res),
+  //       (err) => console.error(err)
+  //     );
+  //   }
+  // }
 
 
 }

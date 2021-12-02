@@ -12,7 +12,11 @@ export class ParkingService {
     tipo: "",
     placa: "",
     entrada: new Date,
-    salida: new Date
+    salida: new Date,
+    duracion: new Number,
+    tarifa: new Number,
+    total: new Number,
+    vigilante: new String,
   }
   parking!: Parking[];
 
@@ -24,6 +28,10 @@ export class ParkingService {
 
   createParking(parking: Parking) {
     return this.http.post(this.URL_API, parking);
+
+  }
+
+  editParking(parking: Parking, placa:String){
 
   }
 
