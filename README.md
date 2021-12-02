@@ -65,7 +65,8 @@ wireframe 1 - Parking4:
 ## SPRINT 3 - Configurando el backend
 
 ### Redefinición del diagrama de clases
-![diagrama](https://user-images.githubusercontent.com/93130943/143666955-d95f60aa-2d90-42e4-abcc-0c06dc763f93.png)
+![diagrama_clases](https://user-images.githubusercontent.com/93130943/144349665-bd2af53e-a916-4a7e-ba0d-5e39871cd5f8.png)
+
 
 ### Evidencias en la implementación de código
 ![backend](https://user-images.githubusercontent.com/93130943/143667441-332d9cd5-3ef4-410d-839f-e0430e3db2c8.png)
