@@ -13,7 +13,7 @@ const parkingSchema = new Schema(
         vigilante: {type: String, requires: false},
     },
     {
-        timestamps: true,
+        timestamps: false,
         versionKey: false,
     }
 
