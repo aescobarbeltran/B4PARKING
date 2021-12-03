@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ParkingService } from '../../services/parking.service';
-import { NgForm } from '@angular/forms';
-import { Parking } from 'src/app/models/parking';
+//const utils = require('../../Utils/utils');
 
 @Component({
   selector: 'app-parking-list',
@@ -15,6 +14,33 @@ export class ParkingListComponent implements OnInit {
   ngOnInit(): void {
     this.getParking();
   }
+  getDuracion(f1:Date, f2:Date):number{
+    console.log(f2.valueOf(),f1.valueOf());
+    var df1=new Date(f1.valueOf());
+    var df2=new Date(f2.valueOf());
+    return (df2.getTime()-df1.getTime())*1e-3/60;
+  }
+
+  getTarifa(tipo:String){
+    if(tipo === "moto"){
+      return 66.67;
+    }else{
+      return 83.33;
+    }
+
+  }
+
+  getMoneda (number: number) {
+    var locales="es-CO";
+    var currency="COP"
+    var fractionDigits=2;
+    var formatted = new Intl.NumberFormat(locales, {
+      style: 'currency',
+      currency: currency,
+      minimumFractionDigits: fractionDigits
+    }).format(number);
+    return formatted;
+  }
 
   getParking() {
     this.parkingService.getParking().subscribe(
@@ -24,29 +50,4 @@ export class ParkingListComponent implements OnInit {
     err => console.error(err)
     )
   }
-
-  addParking(form: NgForm) {
-    if (confirm("Confirma Guardar")) {
-    this.parkingService.createParking(form.value).subscribe(
-      res => {
-        this.getParking();
-        form.reset();
-      },
-      err => console.error(err)
-    )
-  }
-  }
-
-  editParking(parking: Parking) {
-    this.parkingService.selectedParking = parking;
-  }
-
-  deleteParking(_id: string) {
-    this.parkingService.deleteParking(_id).subscribe(
-      (res) => console.log(res),
-      (err) => console.error(err)
-    );
-  }
-
-
 }

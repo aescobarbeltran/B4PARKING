@@ -11,4 +11,5 @@ export interface Parking {
   tarifa: Number
   total: Number
   vigilante: String
+
 }

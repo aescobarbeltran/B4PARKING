@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-4">
       <div class="card-body" align="center">
-        <form (submit)='addConfig(configForm)' #configForm='ngForm'>
+        <form #configForm='ngForm' (submit)='addConfig(configForm)'>
           <mat-form-field appearance="fill">
             <mat-label>Tarifa para carro [$/min]</mat-label>
             <input type="int" matInput tar_car='ngModel'>

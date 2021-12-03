@@ -63,7 +63,7 @@
           </div>
           <hr>
 
-          <button class="btn btn-primary" (click)="editParking()">
+          <button class="btn btn-primary" (click)="editParking();">
             Salida
           </button>
         </form>
@@ -86,9 +86,9 @@
               <td>{{ parking.placa }}</td>
               <td>{{ parking.entrada }}</td>
               <td>{{ parking.salida }}</td>
-              <td>
-                <button class="btn btn-danger" (click)="deleteParking()">Eliminar</button>
-              </td>
+              <!-- <td>
+                <button class="btn btn-danger" (click)="deleteParking(parking.placa)">Eliminar</button>
+              </td> -->
             </tr>
           </tbody>
         </table>

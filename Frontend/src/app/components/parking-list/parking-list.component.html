@@ -18,9 +18,9 @@
         <td>{{ parking.placa }}</td>
         <td>{{ parking.entrada }}</td>
         <td>{{ parking.salida }}</td>
-        <td>{{ parking.duracion}}</td>
-        <td>{{ parking.tarifa }}</td>
-        <td>{{ parking.total }}</td>
+        <td>{{ getDuracion(parking.entrada,parking.salida)}}</td>
+        <td>{{ getTarifa(parking.tipo) }}</td>
+        <td>{{ getMoneda(getTarifa(parking.tipo)*getDuracion(parking.entrada,parking.salida))}}</td>
         <td>{{ parking.vigilante }}</td>
       </tr>
     </tbody>

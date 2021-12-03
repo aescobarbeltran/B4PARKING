@@ -31,13 +31,16 @@ export class ParkingService {
 
   }
 
-  editParking(parking: Parking, placa:String){
-
+  editParking(parking: Parking): any{
+    const data ={
+      placa: parking.placa,
+      salida:parking.salida
+    }
+    return this.http.post(this.URL_API+"/update", data);
   }
 
   deleteParking(_id: string) {
     return this.http.delete(`${this.URL_API}/${_id}`);
-
   }
 
 }

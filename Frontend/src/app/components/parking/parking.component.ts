@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ParkingService } from '../../services/parking.service';
 import { NgForm } from '@angular/forms';
-import { Parking } from 'src/app/models/parking';
+// import { Parking } from 'src/app/models/parking';
+// import { AnyRecord } from 'dns';
 
 @Component({
   selector: 'app-parking',
@@ -26,7 +27,7 @@ export class ParkingComponent implements OnInit {
   }
 
   addParking(form: NgForm) {
-    if (confirm("Confirma Guardar")) {
+    if (confirm("Confirma Guardar servicio")) {
     this.parkingService.createParking(form.value).subscribe(
       res => {
         this.getParking();
@@ -38,30 +39,31 @@ export class ParkingComponent implements OnInit {
   }
 
   editParking() {
-    if (confirm("Confirma terminar servicio")) {
+    if (confirm("Confirma Guardar la hora de salida")) {
+      this.parkingService.editParking(this.parkingService.selectedParking)
+      .subscribe(
+        (res: any) => {
+          console.log(res),
+          alert(res.status);
+          this.getParking();
+        },
+        (err:any) => console.error(err)
+      );
     }
-    // parking.duracion=(parking.salida-parking.entrada)*1e-3/60;
-    // if (parking.tipo=="carro"){
-    //   parking.tarifa=tarifa_carro;
-    // }else{
-    //   parking.tarifa=tarifa_moto;
-    // }
-    // parking.total=parking.duracion*parking.tarifa;
-    // parking.vigilante=user.name;
+  }
+  deleteParking(_id: string) {
+    if (confirm("Confirma Eliminar el servicio")) {
+      this.parkingService.deleteParking(_id).subscribe(
+        (res) => console.log(res),
+        (err) => console.error(err)
+      );
+    }
   }
 
-  deleteParking() {
-    if (confirm("Confirma eliminar servicio")) {
-    }
-  }
   // deleteParking(_id: string) {
-  //   if (confirm("Confirma eliminar servicio")) {
   //     this.parkingService.deleteParking(_id).subscribe(
   //       (res) => console.log(res),
   //       (err) => console.error(err)
   //     );
   //   }
-  // }
-
-
 }
